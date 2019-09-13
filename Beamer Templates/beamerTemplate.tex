@@ -1,0 +1,49 @@
+%\documentclass[10pt,handout]{beamer}
+\documentclass[10pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usetheme{Copenhagen}
+\usepackage{hyperref}
+\usepackage{pdfpc-commands}
+\usepackage{appendixnumberbeamer}
+\definecolor{ndBlue}{HTML}{0C2340}
+\definecolor{ndGold}{HTML}{D39F10}
+\setbeamercolor{titlelike}{parent=structure,bg=ndBlue,fg=ndGold}
+\setbeamercolor{section in head/foot}{fg=ndBlue, bg=ndGold}
+\setbeamercolor{title in head/foot}{fg=ndGold, bg=ndBlue}
+
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\setbeamertemplate{page number in head/foot}[totalframenumber]
+
+\begin{document}
+	\author[]{Author \\ [1ex] {\small  Advisor}}
+	\title[]{ Presentation Title }
+	\titlegraphic{\includegraphics[height=0.8in]{fig/roam-logo.eps}\hspace{1in}\includegraphics[height=0.8in]{fig/AME.eps}}
+	%\subtitle{}
+	%\logo{}
+	\institute{Department of Aerospace and Mechanical Engineering \\University of Notre Dame}
+	\date{}
+	%\subject{}
+	%\setbeamercovered{transparent}
+	%\setbeamertemplate{navigation symbols}{}
+\begin{frame}[plain,noframenumbering]
+	\maketitle
+\end{frame}
+
+\begin{frame}\frametitle{Frame 1}
+Example citation \cite{liu2015dynamic}
+\end{frame}
+
+\appendix
+\begin{frame}[allowframebreaks,plain]{References}
+\scriptsize
+\setbeamertemplate{bibliography item}[text]
+\bibliographystyle{aiaa}
+\bibliography{references}
+\end{frame}
+\end{document}
