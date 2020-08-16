@@ -10,6 +10,7 @@
 \usetheme{Copenhagen}
 \usepackage{hyperref}
 \usepackage{appendixnumberbeamer}
+\usepackage[export]{adjustbox}
 \definecolor{ndBlue}{HTML}{0C2340}
 \definecolor{ndGold}{HTML}{D39F10}
 \setbeamercolor{titlelike}{parent=structure,bg=ndBlue,fg=ndGold}
@@ -23,7 +24,7 @@
 \begin{document}
 	\author[]{Author \\ [1ex] {\small  Advisor}}
 	\title[]{ Presentation Title }
-	\titlegraphic{\includegraphics[height=0.8in]{fig/roam-logo.eps}\hspace{1in}\includegraphics[height=0.8in]{fig/AME.eps}}
+	\titlegraphic{\includegraphics[height=0.8in,valign=c]{fig/roam-logo.eps} \hfill \includegraphics[height=0.4in,valign=c]{fig/ND.eps}}
 	%\subtitle{}
 	%\logo{}
 	\institute{Department of Aerospace and Mechanical Engineering \\University of Notre Dame}
